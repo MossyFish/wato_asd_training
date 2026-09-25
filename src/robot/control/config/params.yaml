@@ -1,3 +1,9 @@
-# control_node:
-#   ros__parameters:
-    
+control_node:
+  ros__parameters:
+    lookahead_distance: 1.5   # meters
+    goal_tolerance: 0.3       # meters, tighter than the planner's so the planner sees it reached
+    linear_speed: 1.0         # m/s
+    max_angular_speed: 1.5    # rad/s
+    turn_in_place_angle: 0.9  # rad
+    slow_down_distance: 2.0   # meters
+    control_period: 0.1       # seconds (10 Hz)

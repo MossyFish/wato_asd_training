@@ -1,3 +1,8 @@
-# planner_node:
-#   ros__parameters:
-    
+planner_node:
+  ros__parameters:
+    lethal_cost: 50          # map cost at or above this is treated as impassable
+    cost_weight: 4.0         # extra path cost for passing through high-cost cells
+    goal_search_radius: 4.0  # meters to search for a free cell if the goal is blocked
+    goal_tolerance: 0.5      # meters from goal to count as reached
+    replan_timeout: 3.0      # seconds before forcing a replan
+    timer_period: 0.5

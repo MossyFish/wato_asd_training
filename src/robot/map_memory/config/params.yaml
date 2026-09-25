@@ -1,3 +1,7 @@
-# map_memory_node:
-#   ros__parameters:
-    
+map_memory_node:
+  ros__parameters:
+    resolution: 0.2            # meters per cell, coarser than the costmap
+    size_m: 40.0               # square global map centered on the world origin
+    frame_id: "sim_world"
+    distance_threshold: 1.5    # meters moved before a new costmap is fused in
+    update_period: 1.0         # seconds between timer ticks

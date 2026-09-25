@@ -1,3 +1,6 @@
-# costmap_node:
-#   ros__parameters:
-
+costmap_node:
+  ros__parameters:
+    resolution: 0.1        # meters per cell, finer than the map so map memory leaves no holes
+    size_m: 30.0           # local grid is a square centered on the robot
+    inflation_radius: 2.0  # meters
+    max_cost: 100
